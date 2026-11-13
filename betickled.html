@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeTickled case study, Muni Manasa Golla</title>
+<meta name="description" content="Around 450 session recordings turned into 21 rated issues, 13 at the highest severity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Muni Manasa Golla</a>
+<nav aria-label="Main"><ul>
+<li><a href="index.html#work">Work</a></li>
+<li class="opt"><a href="index.html#about">About</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul></nav>
+</div></header>
+<main id="main">
+<article><div class="wrap read">
+<div class="case-hero">
+<a class="back" href="index.html#work">&larr; All work</a>
+<p class="eyebrow">Consumer app · Dating and social</p>
+<h1>BeTickled: Finding where new users gave up on a dating app</h1>
+</div>
+<section class="summary" aria-label="Summary"><dl><dt>Product</dt><dd>Dating and social app for Android</dd><dt>My role</dt><dd>UX researcher</dd><dt>Timeline</dt><dd>Usability review completed December 2020</dd><dt>Methods</dt><dd>Session recording analysis (around 450 sessions), severity rating, pattern benchmarking</dd><dd class="result">21 issues rated by severity, 13 at the highest level, each with a recommended fix.</dd></dl></section>
+
+<h2>The problem</h2>
+<p>BeTickled, a US startup, had launched a dating and social app on Android. New users were signing up and then disappearing, and the team didn't know where or why.</p>
+<p><strong>Research question:</strong> Where do new users struggle or give up in the app, and what is causing it?</p>
+
+<h2>What I did and why</h2>
+<p>I reviewed around 450 recorded user sessions from November 2020 in Smartlook. Recordings show what real users do without a researcher in the room, which was the fastest way to see problems across the whole app at once.</p>
+<p>I went module by module, from sign-up and login to the map, profiles, chat, settings and premium features. For each problem I wrote down what users did, why it was a problem, and a recommended fix. I rated every issue on a 1 to 5 severity scale so the team could decide what to fix first. Where it helped, I compared our patterns with what users already know from other dating apps.</p>
+
+<h2>What I found, and what I recommended</h2>
+
+<div class="finding">
+<h3>1. A missing back button restarted the whole sign-up</h3>
+<p><span class="label">Evidence:</span> On the create-password screen, users tried to go back. There was no back button, and Android's own back button closed the app, so they had to start again.</p>
+<p><span class="label">Recommendation (severity 5):</span> Add a back button and make Android's back button go to the previous step.</p>
+</div>
+
+<div class="finding">
+<h3>2. Small controls caused big drop-off</h3>
+<p><span class="label">Evidence:</span> Users dragged the age slider three or four times to set their age. When uploading photos, they couldn't crop or rotate, so they left the app to edit and had to restart the upload.</p>
+<p><span class="label">Recommendation (severity 5):</span> Replace the slider with a simpler input, and add basic crop and rotate.</p>
+</div>
+
+<div class="finding">
+<h3>3. New users didn't trust the app yet</h3>
+<p><span class="label">Evidence:</span> Some users uploaded cartoons, animals or model photos to hide their identity. The app rejected them, and they left.</p>
+<p><span class="label">Recommendation (severity 4):</span> Accept any photo but keep it hidden from others until the profile is verified. This respects the user's caution while protecting other users.</p>
+</div>
+
+<div class="finding">
+<h3>4. Familiar patterns were missing</h3>
+<p><span class="label">Evidence:</span> Most users didn't use the tick and cross buttons to like or skip profiles, and didn't know what they would do. Search filters gave no feedback, and in some cases didn't apply.</p>
+<p><span class="label">Recommendation (severity 4 to 5):</span> Use the heart and swipe patterns users already know from other apps, and add an Apply button so people see that their filters worked.</p>
+</div>
+
+<div class="finding">
+<h3>5. Empty screens sent people away</h3>
+<p><span class="label">Evidence:</span> About ten users opened chat in November, found no matches, and left.</p>
+<p><span class="label">Recommendation (severity 4):</span> Explain the empty state and invite people back, so a quiet first day doesn't feel like a broken app.</p>
+</div>
+
+<h2>Outcome</h2>
+<p>I delivered a report of 21 issues across sign-up, login, updates, the map, profiles, chat, settings and premium features. 13 were rated at the highest severity, so the team had a clear order for fixes. I handed it to the team with each issue's evidence, severity and recommended fix.</p>
+
+<h2>What I learned</h2>
+<p>Recordings are excellent at showing <em>what</em> people do, but they only let you guess <em>why</em>. The photo finding was the clearest example: what looked like a technical rule was really about trust.</p>
+<p><strong>What I'd do differently:</strong> pair the recordings with a few short interviews, so I could confirm the reasons behind the behaviour before recommending fixes.</p>
+
+<nav class="next" aria-label="More case studies"><a href="snapquote.html">&larr; SnapQuote</a><a href="skimli.html">Skimli AI &rarr;</a></nav>
+</div></article>
+</main>
+<footer><div class="wrap">
+<span>Muni Manasa Golla, UX Researcher, Vancouver BC</span>
+<span><a href="mailto:munimanasa8@gmail.com">munimanasa8@gmail.com</a></span>
+</div></footer>
+</body>
+</html>

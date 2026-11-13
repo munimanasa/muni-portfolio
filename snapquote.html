@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SnapQuote case study, Muni Manasa Golla</title>
+<meta name="description" content="Research shaped an AI quoting app that won the ProductBC Build-a-thon 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Muni Manasa Golla</a>
+<nav aria-label="Main"><ul>
+<li><a href="index.html#work">Work</a></li>
+<li class="opt"><a href="index.html#about">About</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul></nav>
+</div></header>
+<main id="main">
+<article><div class="wrap read">
+<div class="case-hero">
+<a class="back" href="index.html#work">&larr; All work</a>
+<p class="eyebrow">AI product · 2026</p>
+<h1>SnapQuote: Helping tradespeople send a quote before they drive away</h1>
+</div>
+<section class="summary" aria-label="Summary"><dl><dt>Product</dt><dd>AI quoting app for owner-operators in the trades</dd><dt>My role</dt><dd>Research and design lead; later one of three co-founders</dd><dt>Team</dt><dd>Five people at the Build-a-thon; three of us continued as co-founders</dd><dt>Timeline</dt><dd>Fall 2026, September to October</dd><dt>Methods</dt><dd>4 interviews, owner survey (8 responses), review mining, survey pretest, 24 wireframes, prototype</dd><dd class="result">Won the ProductBC Build-a-thon 2026.</dd></dl></section>
+
+<h2>The problem</h2>
+<p>Electricians, plumbers, movers and contractors usually know the price of a job within minutes of seeing it. The quote still goes out days later, because writing it up means sitting at a laptop after a long day. By then, the customer may have hired whoever answered first.</p>
+<p>In week one, our team wrote down six assumptions behind the idea and rated our confidence in each. For most of them, the honest answer was "nothing". That list became my research plan.</p>
+<p><strong>Research question:</strong> Why do owner-operators send quotes late, does the delay cost them work, and what would they trust a tool to do for them?</p>
+
+<h2>What I did and why</h2>
+<ul>
+<li><strong>Interviews with an electrician, a plumber, a mover and a general contractor.</strong> I asked each person to walk me through the last job they quoted, from the site visit to the customer getting a number. Real recent stories are more reliable than opinions about a future app, so the guide never asked "would you use this?"</li>
+<li><strong>An owner survey</strong> to check whether the interview patterns held more widely. It received 8 responses from service businesses.</li>
+<li><strong>A survey pretest with 25 made-up personas.</strong> Before launch, we ran the questions against deliberately varied personas, including people who should be screened out and people who disagree with our idea, to find broken questions. We set one rule: nothing a persona said counted as evidence.</li>
+<li><strong>Review and forum mining</strong> on the Jobber community, Reddit, Capterra and G2, to hear from people we could not reach directly.</li>
+<li><strong>Design.</strong> I turned the findings into a primary persona, 24 wireframes and a Figma prototype that the team then built.</li>
+</ul>
+
+<h2>What I found, and what it changed</h2>
+
+<div class="finding">
+<h3>1. Quotes wait for the evening laptop</h3>
+<p><span class="label">Evidence:</span> The general contractor builds every quote at home in Excel. If he has everything he needs, it takes one to three days; sometimes a week. In the survey, 2 of 8 owners finished their last quote two or more days later, and three named being too busy during the day or quoting outside working hours.</p>
+<p><span class="label">Decision:</span> We set one goal for the product: a quote sent in under a minute, from a phone, before leaving the site.</p>
+</div>
+
+<div class="finding">
+<h3>2. Silence is common, and owners can't see why</h3>
+<p><span class="label">Evidence:</span> The contractor estimated that 40 to 50% of his free quotes get no reply. He had no way to tell whether a customer had even opened one: "I should probably use read receipts."</p>
+<p><span class="label">Decision:</span> Every quote became a tracked web page, so the owner sees when it is sent, delivered, opened and accepted. "Opened" only shows when the customer really opened it.</p>
+</div>
+
+<div class="finding">
+<h3>3. Big platforms push owners away</h3>
+<p><span class="label">Evidence:</span> The contractor had left a well-known platform after it asked for a full year up front; he said it "felt like a scam". Survey owners who had stopped using quoting software said it was too expensive (3), had features they didn't need (2), or didn't save enough time (1).</p>
+<p><span class="label">Decision:</span> No dashboard, no data migration, nothing to learn. We cut the plan to one loop: create a quote, send it, see it opened and accepted. Invoicing, payments and scheduling were parked.</p>
+</div>
+
+<div class="finding">
+<h3>4. Not everyone has this problem, which surprised me</h3>
+<p><span class="label">Evidence:</span> 5 of 8 survey owners rated their current process 4 or 5 out of 5, and three said it already works well. Several freelancers quote within minutes of talking to a client.</p>
+<p><span class="label">Decision:</span> We focused on trades owner-operators who price on site and write quotes after hours, instead of every freelancer. A second persona, a solo instructor with fixed prices, was set aside as a likely weak fit.</p>
+</div>
+
+<div class="finding">
+<h3>5. Owners want to stay in charge of the price</h3>
+<p><span class="label">Evidence:</span> The contractor writes line-by-line quotes because transparency earns his clients' trust. Reviews of AI quoting tools raised the same worry: what if it gets the number wrong?</p>
+<p><span class="label">Decision:</span> The AI never writes a price. Every price comes from the owner's own saved rates, and each line shows where its price came from. If the AI is unsure, for example a customer asked for "six, maybe eight" pot lights, it flags the line and sending stays locked until the owner decides.</p>
+</div>
+
+<figure>
+<img src="img/snapquote-quote-flow.png" width="1600" height="835" alt="Quote flow diagram: Home, voice capture, processing, review with two things to check, then customer preview, send, sent and accepted. Sending only happens after all flags are resolved. Side steps show a plain-words summary for the customer and a reminder in 3 days if the quote is not accepted.">
+<figcaption>The quote flow from our design brief. The product was called CloseTheGap during the build.</figcaption>
+</figure>
+
+<h2>Outcome</h2>
+<ul>
+<li>Our team won the ProductBC Build-a-thon 2026 and presented SnapQuote at the ProductBC Conference winners' showcase in October 2026.</li>
+<li>A working prototype is live at <a href="https://snapquote-eta.vercel.app/">snapquote-eta.vercel.app</a>. Writing a quote from pasted text, flags that block sending, and the customer's quote page all work today. Voice capture and sending are still simulated.</li>
+<li>Our validation plan set clear bars: a 10-case accuracy test with an 80% pass target, usability tests with tradespeople from at least two trades, and two success measures, median time to send a quote and edits per quote. The next step is a founding pilot with BC tradespeople.</li>
+</ul>
+
+<h2>What I learned</h2>
+<p>One sentence from one interview, "one to three days", shaped the whole product. I now listen for the number that shows how much a problem hurts, not just whether it exists.</p>
+<p>I also learned to keep evidence and assumptions apart. Labelling our early personas as assumptions, and refusing to treat the pretest personas as data, kept the team honest about what we actually knew.</p>
+<p><strong>What I'd do differently:</strong> our survey reached more freelancers than tradespeople, and only one respondent was in construction or repair. Next time I would recruit through trade suppliers and associations from day one, so the survey reaches the people we are designing for.</p>
+
+<nav class="next" aria-label="More case studies"><a href="index.html#work">&larr; All work</a><a href="betickled.html">BeTickled &rarr;</a></nav>
+</div></article>
+</main>
+<footer><div class="wrap">
+<span>Muni Manasa Golla, UX Researcher, Vancouver BC</span>
+<span><a href="mailto:munimanasa8@gmail.com">munimanasa8@gmail.com</a></span>
+</div></footer>
+</body>
+</html>

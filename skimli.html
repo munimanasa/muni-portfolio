@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skimli AI case study, Muni Manasa Golla</title>
+<meta name="description" content="Interviews, a survey and a usability study set the product direction and exposed hidden friction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Muni Manasa Golla</a>
+<nav aria-label="Main"><ul>
+<li><a href="index.html#work">Work</a></li>
+<li class="opt"><a href="index.html#about">About</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul></nav>
+</div></header>
+<main id="main">
+<article><div class="wrap read">
+<div class="case-hero">
+<a class="back" href="index.html#work">&larr; All work</a>
+<p class="eyebrow">AI product · Video creators</p>
+<h1>Skimli AI: Learning what creators need from AI-made video clips</h1>
+</div>
+<section class="summary" aria-label="Summary"><dl><dt>Product</dt><dd>AI platform that turns long videos into short clips of key moments</dd><dt>My role</dt><dd>UX researcher</dd><dt>Team</dt><dd>A small research team, working with Skimli's co-founders (product and marketing)</dd><dt>Timeline</dt><dd>May 2022 to Aug 2023</dd><dt>Methods</dt><dd>8 interviews, survey (18 responses), personas, key-moment interviews, moderated usability testing, SUS, acceptance testing</dd><dd class="result">Set the product direction with creator personas and found fixes a 4-out-of-4 usability study would have missed.</dd></dl></section>
+
+<h2>The problem</h2>
+<p>Skimli uses AI to skim a long video and cut a short clip of its most important moments. To grow, the team needed to know why some creators make short versions of their videos, what stops others, and whether Skimli's AI picked the moments creators would pick themselves.</p>
+<p><strong>Research questions:</strong> How and why do creators make short versions of their videos? What gets in their way? And does our AI choose the right moments?</p>
+
+<h2>What I did and why</h2>
+<p>The research ran in four parts, each building on the last.</p>
+<ol>
+<li><strong>Interviews and a survey (April to May 2022).</strong> We interviewed 8 creators about their editing workflow and collected 18 survey responses from creators in countries including India, Kenya, Canada and the US. Interviews explained the why; the survey checked how common it was. The output was a set of creator personas to set product and website direction.</li>
+<li><strong>Key-moment interviews.</strong> We showed creators an AI-made clip of one of their own videos and asked: did we get the key moments right, and what would you add or cut? Using their own content made the feedback concrete.</li>
+<li><strong>A usability study of the website (October to November 2022).</strong> I recruited creators through a screener survey and ran moderated sessions. Four participants completed four tasks, filled in the System Usability Scale (SUS) questionnaire, and then talked me through the try-it-out process and the AI summary of their own video.</li>
+<li><strong>Testing the new clip editor (from December 2022).</strong> I checked the editor against its acceptance criteria and logged where it fell short, then planned and ran a follow-up usability study in which creators watched, edited, renamed, saved and downloaded their clips.</li>
+</ol>
+<p>I was part of a small research team. I planned and ran the usability studies on the website and the new clip editor, tested the clip editor against its requirements, and recruited and coordinated sessions with creators around the world.</p>
+
+<h2>What I found, and what it changed</h2>
+
+<div class="finding">
+<h3>1. Creators do everything themselves, on their phones</h3>
+<p><span class="label">Evidence:</span> Every survey respondent edited their own videos and used a phone to make short videos. Most already made short clips, and many posted at least once a day. Interviews showed the cost: switching between apps, different rules for each platform, and the pressure to grab attention in the first three seconds.</p>
+<p><span class="label">Decision:</span> The personas put fast, phone-friendly, vertical clips at the centre of the product and website story. The team used the personas to set direction for the product and website content.</p>
+</div>
+
+<div class="finding">
+<h3>2. Creators will pay to save time, not for polish</h3>
+<p><span class="label">Evidence:</span> Interviewees found it hard to pay for premium versions of every tool. Video quality mattered but wasn't worth a premium; saving time was. Watermarks made videos look unprofessional.</p>
+<p><span class="label">Decision:</span> Position Skimli around the time it saves creators, not around video quality.</p>
+</div>
+
+<div class="finding">
+<h3>3. A high usability score hid real friction</h3>
+<p><span class="label">Evidence:</span> All four participants completed every task, and the average SUS score was 88. But the conversations showed problems the score missed. Users disliked moving back and forth between email and the website. The confirmation email for a 1 hour 16 minute video promised delivery in over 9 hours, though clips arrived in about 10 minutes. A "#" in one video title stopped the email from arriving. And short videos under 4 minutes produced summaries too short to be useful.</p>
+<p><span class="label">Decision:</span> I reported the wrong delivery estimate and the title bug as the first things to fix, and recommended keeping the try-it-out process on the website instead of sending people to email.</p>
+</div>
+
+<div class="finding">
+<h3>4. Creators want to edit what the AI makes</h3>
+<blockquote>"It is quite impressive, but I normally do not make summary videos. Instead I create small clips to share on Twitter and YouTube Shorts."<br><span class="methods">Usability study participant</span></blockquote>
+<p><span class="label">Evidence:</span> Across the interviews and the usability study, creators asked to add text, add music or a voice-over, and add or remove key moments. In key-moment interviews, they also spotted moments the AI had mislabelled, such as a part where a creator talked about a different video.</p>
+<p><span class="label">Decision:</span> Give creators control over the AI's choices. The team went on to build a clip editor. When I tested it against its requirements, I found that clip start and end times couldn't be typed in, invalid clip lengths weren't blocked, and duplicate-clip warnings named the wrong clip. I logged each one with the expected behaviour so it could be fixed before release.</p>
+</div>
+
+<h2>Outcome</h2>
+<ul>
+<li>Creator personas the team used to set product and website direction.</li>
+<li>A usability baseline (SUS 88, 100% task completion) plus a list of specific fixes.</li>
+<li>A clip editor checked against its requirements, with every gap logged for the developers.</li>
+<li>Across my time at Skimli, I coordinated 50+ remote and hybrid sessions with creators around the world, and ran 30+ interviews and usability tests.</li>
+</ul>
+
+<h2>What I learned</h2>
+<p>A strong score is not the same as a smooth experience. The SUS result was excellent, but the small things people said while using the site, like the wrong delivery time, were the problems most likely to lose a new user.</p>
+<p>Testing the AI with a creator's own video was the most useful thing we did. People judge AI output against what they would have done themselves, so that is how it should be tested.</p>
+<p><strong>What I'd do differently:</strong> run the usability study with more than four people, and include creators who make very short videos, since that is where the AI struggled most.</p>
+<p class="methods"><em>Some details are kept general to respect Skimli's confidentiality.</em></p>
+
+<nav class="next" aria-label="More case studies"><a href="betickled.html">&larr; BeTickled</a><a href="leicester.html">University of Leicester Library &rarr;</a></nav>
+</div></article>
+</main>
+<footer><div class="wrap">
+<span>Muni Manasa Golla, UX Researcher, Vancouver BC</span>
+<span><a href="mailto:munimanasa8@gmail.com">munimanasa8@gmail.com</a></span>
+</div></footer>
+</body>
+</html>
