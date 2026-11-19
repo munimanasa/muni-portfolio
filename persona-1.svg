@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Illustration">
+<rect width="240" height="240" fill="#f3dccb"/>
+<circle cx="196" cy="44" r="26" fill="#fff" opacity=".45"/>
+<path d="M40 240c0-52 36-80 80-80s80 28 80 80z" fill="#d9775a"/>
+<rect x="108" y="136" width="24" height="26" rx="8" fill="#c98e6b"/>
+<ellipse cx="120" cy="104" rx="38" ry="42" fill="#c98e6b"/>
+<circle cx="120" cy="58" r="16" fill="#3b2a22"/><path d="M78 98c0-30 18-46 42-46s42 16 42 46c-8-12-22-20-42-20s-34 8-42 20z" fill="#3b2a22"/>
+<circle cx="106" cy="108" r="3.5" fill="#1b2433"/><circle cx="134" cy="108" r="3.5" fill="#1b2433"/>
+<path d="M108 126q12 9 24 0" stroke="#1b2433" stroke-width="3" fill="none" stroke-linecap="round"/>
+<g transform="translate(150 178) rotate(-20)"><rect x="0" y="10" width="56" height="8" rx="4" fill="#1b2433"/><rect x="-6" y="0" width="14" height="28" rx="4" fill="#0f6b6b"/><rect x="48" y="0" width="14" height="28" rx="4" fill="#0f6b6b"/></g><path d="M34 190c10-20 30-24 40-20-6 16-24 26-40 20z" fill="#5f9e6e"/>
+</svg>

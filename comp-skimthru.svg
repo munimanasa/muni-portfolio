@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" role="img" aria-label="Diagram">
+<rect width="800" height="350" fill="#f6f0e6"/>
+<g transform="translate(40 105)"><rect width="190" height="120" rx="14" fill="#1b2433"/><path d="M82 40l34 20-34 20z" fill="#fff"/><rect x="16" y="100" width="158" height="6" rx="3" fill="#fff" opacity=".3"/><rect x="16" y="100" width="60" height="6" rx="3" fill="#f2c14e"/></g>
+<text x="135" y="255" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="15" fill="#6b6457">Long video in</text>
+<path d="M248 165h60" stroke="#0f6b6b" stroke-width="4" stroke-linecap="round"/><path d="M302 155l14 10-14 10z" fill="#0f6b6b"/>
+<g transform="translate(330 115)"><rect width="190" height="100" rx="18" fill="#0f6b6b"/><text x="95" y="58" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="24" font-weight="800" fill="#fff">Skimthru</text></g>
+<path d="M520 165C540 165 540 110 560 110" stroke="#0f6b6b" stroke-width="3" fill="none"/><path d="M520 165C540 165 540 180 560 180" stroke="#0f6b6b" stroke-width="3" fill="none"/>
+<g transform="translate(560 85)"><rect width="200" height="50" rx="12" fill="#fff" stroke="#d9cfc0"/><circle cx="24" cy="25" r="8" fill="#0f6b6b"/><text x="42" y="31" font-family="Manrope,Arial,sans-serif" font-size="16" font-weight="700" fill="#1b2433">Word cloud</text></g><g transform="translate(560 155)"><rect width="200" height="50" rx="12" fill="#fff" stroke="#d9cfc0"/><circle cx="24" cy="25" r="8" fill="#0f6b6b"/><text x="42" y="31" font-family="Manrope,Arial,sans-serif" font-size="16" font-weight="700" fill="#1b2433">Key topics</text></g>
+</svg>
