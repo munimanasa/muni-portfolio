@@ -7,7 +7,7 @@
 <meta name="description" content="Around 450 session recordings turned into 21 rated issues, 13 at the highest severity.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,6 +16,7 @@
 <a class="brand" href="index.html">Muni Manasa Golla</a>
 <nav aria-label="Main"><ul>
 <li><a href="index.html#work">Work</a></li>
+<li class="opt"><a href="Muni-Golla-Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
 <li class="opt"><a href="index.html#about">About</a></li>
 <li><a href="index.html#contact">Contact</a></li>
 </ul></nav>
@@ -26,56 +27,66 @@
 <a class="back" href="index.html#work">&larr; All work</a>
 <p class="eyebrow">Consumer app · Dating and social</p>
 <h1>BeTickled: Finding where new users gave up on a dating app</h1>
+<p class="subtitle">Around 450 session recordings turned into 21 rated issues, 13 at the highest severity.</p>
 </div>
-<section class="summary" aria-label="Summary"><dl><dt>Product</dt><dd>Dating and social app for Android</dd><dt>My role</dt><dd>UX researcher</dd><dt>Timeline</dt><dd>Usability review completed December 2020</dd><dt>Methods</dt><dd>Session recording analysis (around 450 sessions), severity rating, pattern benchmarking</dd><dd class="result">21 issues rated by severity, 13 at the highest level, each with a recommended fix.</dd></dl></section>
+<figure class="hero-shot plain "><img src="img/hero-betickled.jpg" alt="Five BeTickled phone screens from the usability review, with a heatmap of the welcome screen in the centre." width="1600" height="720"></figure>
+<section class="summary" aria-label="Project scope"><p class="label">Project scope</p><dl><dt>Product</dt><dd>Dating and social app for Android</dd><dt>My role</dt><dd>UX researcher</dd><dt>Timeline</dt><dd>Usability review completed December 2020</dd><dt>Methods</dt><dd>Session recording analysis (around 450 sessions), heatmaps, severity rating, pattern benchmarking</dd><dt>Tools</dt><dd>Smartlook, Mixpanel</dd><dd class="result">21 issues rated by severity, 13 at the highest level, each with a recommended fix.</dd></dl></section>
 
-<h2>The problem</h2>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#observe">Observe</a></li><li><a href="#rate">Rate</a></li><li><a href="#recommend">Recommend</a></li><li><a href="#outcome">Outcome</a></li></ol></nav>
+<aside class="insight" aria-label="Key insight">
+<p class="label">Key insight</p>
+<p class="statement-sm">New users weren't leaving because of one big flaw. They left over <em>small moments</em>: a missing back button, a fiddly slider, a photo the app refused.</p>
+<p>And some of what looked like technical problems were really about trust.</p>
+</aside>
+
+<h2>The research story</h2>
+<p class="lede">Three steps, from watching real sessions to a ranked list of fixes. Select a step to jump to it.</p>
+<ol class="story" style="--n:3" aria-label="Research story"><li><a href="#observe"><b>1</b><strong>Observe</strong><span>What do new users actually do?</span><em>Session recordings · Heatmaps</em></a></li><li><a href="#rate"><b>2</b><strong>Rate</strong><span>Which problems matter most?</span><em>Severity rating 1 to 5</em></a></li><li><a href="#recommend"><b>3</b><strong>Recommend</strong><span>How should each be fixed?</span><em>Pattern benchmarking · Report</em></a></li></ol>
+
+<h2>Project overview</h2>
 <p>BeTickled, a US startup, had launched a dating and social app on Android. New users were signing up and then disappearing, and the team didn't know where or why.</p>
-<p><strong>Research question:</strong> Where do new users struggle or give up in the app, and what is causing it?</p>
+<p><strong>My role:</strong> UX researcher. I reviewed the recordings, rated every issue and wrote the recommendations.</p>
 
-<h2>What I did and why</h2>
-<p>I reviewed around 450 recorded user sessions from November 2020 in Smartlook. Recordings show what real users do without a researcher in the room, which was the fastest way to see problems across the whole app at once.</p>
-<p>I went module by module, from sign-up and login to the map, profiles, chat, settings and premium features. For each problem I wrote down what users did, why it was a problem, and a recommended fix. I rated every issue on a 1 to 5 severity scale so the team could decide what to fix first. Where it helped, I compared our patterns with what users already know from other dating apps.</p>
+<h2 id="observe"><span class="stepno">1</span>Observe: What do new users actually do?</h2>
+<div class="mcard"><div><span>Research question</span><p>Where do new users struggle or give up, and what is causing it?</p></div><div><span>Methods</span><p>Session recording analysis, heatmaps</p></div><div><span>Who and what</span><p>Around 450 recorded sessions from November 2020, in Smartlook</p></div></div>
+<p>Recordings show what real users do without a researcher in the room, which was the fastest way to see problems across the whole app at once. I went module by module, from sign-up and login to the map, profiles, chat, settings and premium features.</p>
+<figure class="narrow-fig"><a href="img/bt-heatmap.jpg" class="zoom" target="_blank" rel="noopener"><img src="img/bt-heatmap.jpg" alt="Heatmap over the welcome screen showing where users tapped and looked, spread across the whole screen, not just the sign-up buttons." width="365" height="729" loading="lazy"></a><figcaption>The welcome screen heatmap: attention spread across the whole screen, not just the sign-up buttons. <a href="img/bt-heatmap.jpg" target="_blank" rel="noopener">View full size</a></figcaption></figure><div class="impact"><p class="ilabel">Research impact</p><ul><li><strong>A full picture of the app:</strong> problems mapped across nine parts of the app, from sign-up to premium features, each with what users did and why it mattered.</li></ul></div>
 
-<h2>What I found, and what I recommended</h2>
+<h2 id="rate"><span class="stepno">2</span>Rate: Which problems matter most?</h2>
+<div class="mcard"><div><span>Research question</span><p>Which problems should the team fix first?</p></div><div><span>Methods</span><p>Severity rating on a 1 to 5 scale</p></div><div><span>Who and what</span><p>21 issues across nine parts of the app</p></div></div><figure class="chart-fig"><figcaption class="ct">Issues by severity (1 to 5)</figcaption><svg class="chart" viewBox="0 0 600 130" role="img" aria-label="Issues by severity (1 to 5)"><text x="218" y="27" text-anchor="end" class="cl">Severity 5, most significant</text><rect x="230" y="14" width="300.0" height="18" rx="4" class="cb"><title>Severity 5, most significant: 13</title></rect><text x="538.0" y="27" class="cv">13</text><text x="218" y="65" text-anchor="end" class="cl">Severity 4</text><rect x="230" y="52" width="138.5" height="18" rx="4" class="cb"><title>Severity 4: 6</title></rect><text x="376.5" y="65" class="cv">6</text><text x="218" y="103" text-anchor="end" class="cl">Severity 3</text><rect x="230" y="90" width="46.2" height="18" rx="4" class="cb"><title>Severity 3: 2</title></rect><text x="284.2" y="103" class="cv">2</text></svg><figcaption>21 issues rated across nine parts of the app.</figcaption></figure>
+<div class="finding"><h3>A missing back button restarted the whole sign-up</h3><p>On the create-password screen there was no back button, and Android's own back button closed the app, so users had to start again. <strong>Severity 5.</strong></p></div>
+<div class="finding"><h3>Small controls caused big drop-off</h3><p>Users dragged the age slider three or four times to set their age. They couldn't crop or rotate photos, so they left the app to edit and had to restart the upload. <strong>Severity 5.</strong></p></div>
+<div class="finding"><h3>New users didn't trust the app yet</h3><p>Some users uploaded cartoons, animals or model photos to hide their identity. The app rejected them, and they left. <strong>Severity 4.</strong></p></div>
+<div class="finding"><h3>Familiar patterns were missing</h3><p>Most users didn't know what the tick and cross buttons did. Search filters gave no feedback, and sometimes didn't apply. <strong>Severity 4 to 5.</strong></p></div>
+<div class="finding"><h3>Empty screens sent people away</h3><p>About ten users opened chat, found no matches, and left. <strong>Severity 4.</strong></p></div>
+<figure class="gallery phones"><ul><li><a href="img/bt-password.jpg" class="zoom" target="_blank" rel="noopener"><img src="img/bt-password.jpg" alt="Create password screen with no back button." width="337" height="779" loading="lazy"></a><span>No way back</span></li><li><a href="img/bt-age.jpg" class="zoom" target="_blank" rel="noopener"><img src="img/bt-age.jpg" alt="Add profile screen with an age slider users had to drag several times." width="284" height="647" loading="lazy"></a><span>Hard-to-use age slider</span></li><li><a href="img/bt-location-dead-end.jpg" class="zoom" target="_blank" rel="noopener"><img src="img/bt-location-dead-end.jpg" alt="Screen telling users to go to their phone settings to allow location access, after they tapped Not now." width="413" height="953" loading="lazy"></a><span>Permission dead end</span></li></ul><figcaption>Evidence from the recordings, as I presented it in my report.</figcaption></figure><div class="impact"><p class="ilabel">Research impact</p><ul><li><strong>A clear fix order:</strong> 13 of the 21 issues were rated at the highest severity, so the team knew exactly where to start.</li></ul></div>
 
-<div class="finding">
-<h3>1. A missing back button restarted the whole sign-up</h3>
-<p><span class="label">Evidence:</span> On the create-password screen, users tried to go back. There was no back button, and Android's own back button closed the app, so they had to start again.</p>
-<p><span class="label">Recommendation (severity 5):</span> Add a back button and make Android's back button go to the previous step.</p>
-</div>
+<h2 id="recommend"><span class="stepno">3</span>Recommend: How should each be fixed?</h2>
+<div class="mcard"><div><span>Research question</span><p>What fix would solve each problem without adding new ones?</p></div><div><span>Methods</span><p>Recommendations benchmarked against patterns users know from other dating apps</p></div><div><span>Who and what</span><p>A report for the product team</p></div></div><figure class="table-fig"><div class="table-wrap"><table><thead><tr><th scope="col">Problem</th><th scope="col">My recommendation</th></tr></thead><tbody><tr><th scope="row">No back button in sign-up</th><td>Add a back button, and make Android's back button go to the previous step</td></tr><tr><th scope="row">Fiddly age slider and photo upload</th><td>Replace the slider with a simpler input, and add basic crop and rotate</td></tr><tr><th scope="row">Real-looking photos rejected</th><td>Accept any photo, but keep it hidden from others until the profile is verified</td></tr><tr><th scope="row">Unfamiliar like and skip buttons</th><td>Use the heart and swipe patterns users already know, and add an Apply button to filters</td></tr><tr><th scope="row">Empty chat on day one</th><td>Explain the empty state and invite people back</td></tr></tbody></table></div><figcaption>Recommendations from my usability review report.</figcaption></figure><div class="impact"><p class="ilabel">Research impact</p><ul><li><strong>A report the team could act on:</strong> every issue came with its evidence, severity and a recommended fix.</li></ul></div>
 
-<div class="finding">
-<h3>2. Small controls caused big drop-off</h3>
-<p><span class="label">Evidence:</span> Users dragged the age slider three or four times to set their age. When uploading photos, they couldn't crop or rotate, so they left the app to edit and had to restart the upload.</p>
-<p><span class="label">Recommendation (severity 5):</span> Replace the slider with a simpler input, and add basic crop and rotate.</p>
-</div>
+<h2 id="outcome">Outcome</h2>
+<ul class="outcomes"><li><b>21 issues, ranked</b>Across sign-up, login, updates, the map, profiles, chat, settings and premium features, with 13 at the highest severity.</li><li><b>Ready to fix</b>Each issue handed over with its evidence, severity and recommended fix, so the team had a clear order for fixes.</li></ul>
 
-<div class="finding">
-<h3>3. New users didn't trust the app yet</h3>
-<p><span class="label">Evidence:</span> Some users uploaded cartoons, animals or model photos to hide their identity. The app rejected them, and they left.</p>
-<p><span class="label">Recommendation (severity 4):</span> Accept any photo but keep it hidden from others until the profile is verified. This respects the user's caution while protecting other users.</p>
-</div>
-
-<div class="finding">
-<h3>4. Familiar patterns were missing</h3>
-<p><span class="label">Evidence:</span> Most users didn't use the tick and cross buttons to like or skip profiles, and didn't know what they would do. Search filters gave no feedback, and in some cases didn't apply.</p>
-<p><span class="label">Recommendation (severity 4 to 5):</span> Use the heart and swipe patterns users already know from other apps, and add an Apply button so people see that their filters worked.</p>
-</div>
-
-<div class="finding">
-<h3>5. Empty screens sent people away</h3>
-<p><span class="label">Evidence:</span> About ten users opened chat in November, found no matches, and left.</p>
-<p><span class="label">Recommendation (severity 4):</span> Explain the empty state and invite people back, so a quiet first day doesn't feel like a broken app.</p>
-</div>
-
-<h2>Outcome</h2>
-<p>I delivered a report of 21 issues across sign-up, login, updates, the map, profiles, chat, settings and premium features. 13 were rated at the highest severity, so the team had a clear order for fixes. I handed it to the team with each issue's evidence, severity and recommended fix.</p>
-
-<h2>What I learned</h2>
+<h2>Reflection</h2>
+<h3>What I learned</h3>
 <p>Recordings are excellent at showing <em>what</em> people do, but they only let you guess <em>why</em>. The photo finding was the clearest example: what looked like a technical rule was really about trust.</p>
-<p><strong>What I'd do differently:</strong> pair the recordings with a few short interviews, so I could confirm the reasons behind the behaviour before recommending fixes.</p>
-
+<h3>What I'd do differently</h3>
+<p>Pair the recordings with a few short interviews, so I could confirm the reasons behind the behaviour before recommending fixes.</p>
+<script>
+document.querySelectorAll('[data-explorer]').forEach(function(ex){
+  var tabs=[].slice.call(ex.querySelectorAll('[role=tab]'));
+  function show(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});}
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){show(t);});
+    t.addEventListener('keydown',function(e){var k=e.key,n=null;if(k==='ArrowDown'||k==='ArrowRight')n=tabs[(i+1)%tabs.length];if(k==='ArrowUp'||k==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];if(n){e.preventDefault();show(n);n.focus();}});});
+});
+</script><script>
+(function(){var toc=document.querySelector('.toc');if(!toc)return;var links=[].slice.call(toc.querySelectorAll('a'));
+var top=document.querySelector('.top');function setTop(){if(top)toc.style.setProperty('--toc-top',top.offsetHeight+'px');}setTop();window.addEventListener('resize',setTop);
+var story=document.querySelector('.story');function onScroll(){var y=story?story.getBoundingClientRect().bottom:0;toc.classList.toggle('show',y<0);}window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+if(!('IntersectionObserver' in window))return;var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.removeAttribute('aria-current');});var a=map[e.target.id];if(a){a.setAttribute('aria-current','true');var ol=toc.querySelector('ol');ol.scrollLeft=a.offsetLeft-16;}}});},{rootMargin:'-20% 0px -70% 0px'});
+Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el);});})();
+</script>
 <nav class="next" aria-label="More case studies"><a href="snapquote.html">&larr; SnapQuote</a><a href="skimli.html">Skimli AI &rarr;</a></nav>
 </div></article>
 </main>
